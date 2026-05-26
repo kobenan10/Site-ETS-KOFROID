@@ -1,0 +1,6 @@
+{
+  "name": "ETS Kofroid",
+  "description": "Landing page professionnelle et moderne pour ETS Kofroid, expert en froid, climatisation, électricité, plomberie et travaux de bâtiment à Abidjan.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
