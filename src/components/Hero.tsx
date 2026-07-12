@@ -15,7 +15,7 @@ export default function Hero() {
       <div className="absolute inset-0 z-0 select-none pointer-events-none">
         {!imageFailed && (
           <img 
-            src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=1920&q=80" 
+            src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=1920&q=80" 
             alt="ETS Kofroid - Compétences professionnelles" 
             className="w-full h-full object-cover object-center opacity-25 scale-102"
             referrerPolicy="no-referrer"
