@@ -1,5 +1,9 @@
 import React, { useState } from 'react';
 import { Camera, CheckCircle2, Wind, Zap, Droplet, Building2, ExternalLink, Calendar } from 'lucide-react';
+import photoClimExt from '../assets/photos/climatisation-installation-exterieure.jpg';
+import photoClimSplit from '../assets/photos/climatisation-split-mural.jpg';
+import photoElecTableau from '../assets/photos/electricite-tableau.jpg';
+import photoPlombCollecteur from '../assets/photos/plomberie-collecteur-compteurs.jpg';
 
 interface Project {
   id: string;
@@ -20,9 +24,8 @@ const REAL_PROJECTS: Project[] = [
     category: "froid",
     categoryLabel: "Froid & Climatisation",
     description: "Nettoyage haute pression en cours d'une unité extérieure de climatisation par notre technicien qualifié (en uniforme Kofroid sur un escabeau à Zoé Bruno). Ce lavage technique élimine le sable rigoureusement, libère les ailettes pour rétablir la performance optimale et économiser de l'électricité.",
-    // TODO: remplacer par une vraie photo du chantier -> déposer le fichier dans /assets/projects/proj-1.jpg
-    // Tant que le fichier n'existe pas, le schéma technique SVG ci-dessous s'affiche automatiquement (onError)
-    image: "/assets/projects/proj-1.jpg",
+    // Vraie photo ETS Kofroid : installation d'unité extérieure Daikin
+    image: photoClimExt,
     location: "Zoé Bruno, Marcory",
     date: "Mai 2026",
     achievement: "Flux d'air libéré & consommation réduite"
@@ -33,8 +36,8 @@ const REAL_PROJECTS: Project[] = [
     category: "froid",
     categoryLabel: "Froid & Climatisation",
     description: "Intervention intérieure pour le montage, câblage et la mise en service d'un split mural. Nos techniciens interviennent proprement sur escabeau avec équipements de sécurité, garantissant un raccordement parfait des fluides frigorigènes et une intégration esthétique dans votre intérieur.",
-    // TODO: remplacer par une vraie photo du chantier -> déposer le fichier dans /assets/projects/proj-2.jpg
-    image: "/assets/projects/proj-2.jpg",
+    // Vraie photo ETS Kofroid : split mural installé, pièce en finition
+    image: photoClimSplit,
     location: "Zone Résidentielle, Abidjan",
     date: "Mai 2026",
     achievement: "Fonctionnement silencieux et étanchéité testée"
@@ -45,8 +48,8 @@ const REAL_PROJECTS: Project[] = [
     category: "electricite",
     categoryLabel: "Électricité Générale",
     description: "Remplacement complet d'un ancien tableau à fusibles par un coffret de distribution moderne. Installation de disjoncteurs divisionnaires, d'interrupteurs différentiels 30mA pour la protection des personnes, et câblage rigoureux d'un inverseur automatique de source de secours.",
-    // TODO: remplacer par une vraie photo du chantier -> déposer le fichier dans /assets/projects/proj-3.jpg
-    image: "/assets/projects/proj-3.jpg",
+    // Vraie photo ETS Kofroid : tableau électrique Schneider rénové
+    image: photoElecTableau,
     location: "Zone 4, Marcory",
     date: "Avril 2026",
     achievement: "Sécurité électrique certifiée conforme"
@@ -57,8 +60,8 @@ const REAL_PROJECTS: Project[] = [
     category: "plomberie",
     categoryLabel: "Plomberie & Sanitaire",
     description: "Aménagement d'un système complet de surpression d'eau avec ballon de stockage pour pallier les chutes de pression récurrentes du réseau public. Raccordements réalisés en tubes multicouches sertis pour une longévité maximale sans aucune corrosion.",
-    // TODO: remplacer par une vraie photo du chantier -> déposer le fichier dans /assets/projects/proj-4.jpg
-    image: "/assets/projects/proj-4.jpg",
+    // Vraie photo ETS Kofroid : collecteur de compteurs sur réseau d'eau
+    image: photoPlombCollecteur,
     location: "Riviera 3, Cocody",
     date: "Mars 2026",
     achievement: "Pression d'eau constante à tous les étages"
@@ -185,13 +188,13 @@ export default function RealProjects() {
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto space-y-4 mb-12">
           <span className="text-xs uppercase tracking-widest bg-orange-100 text-orange-850 font-extrabold px-3.5 py-1.5 rounded-full border border-orange-200 inline-flex items-center gap-1.5">
-            <Camera size={13} className="text-accent-orange animate-pulse" /> Nos Types d'Interventions
+            <Camera size={13} className="text-accent-orange animate-pulse" /> Photos Réelles de Terrain
           </span>
           <h2 className="font-display font-bold text-3xl md:text-4xl text-slate-900 tracking-tight">
             Nos Chantiers en Image
           </h2>
           <p className="text-xs md:text-sm text-slate-600 leading-relaxed font-light">
-            Chez <strong>ETS Kofroid</strong>, l'excellence technique se prouve sur le terrain. Voici un aperçu représentatif des interventions de dépannage et d'installation que nos techniciens qualifiés réalisent à Abidjan.
+            Chez <strong>ETS Kofroid</strong>, l'excellence technique se prouve sur le terrain. Découvrez des clichés réels de nos techniciens qualifiés en pleine intervention de dépannage et d'installation à Abidjan.
           </p>
         </div>
 
@@ -284,9 +287,9 @@ export default function RealProjects() {
           <div className="flex flex-col sm:flex-row items-center gap-5 relative z-10">
             <span className="text-4xl">🛠️</span>
             <div className="space-y-1.5">
-              <h4 className="font-display font-semibold text-xs uppercase tracking-wider text-orange-400">Notre engagement qualité</h4>
+              <h4 className="font-display font-semibold text-xs uppercase tracking-wider text-orange-400">Pourquoi nous montrons de vrais travaux ?</h4>
               <p className="text-xs text-slate-300 leading-relaxed font-light">
-                À Marcory, Zoé Bruno et partout à Abidjan, de nombreux faux techniciens circulent. ETS Kofroid s'engage sur la transparence totale : de vrais techniciens qualifiés, des outils de diagnostic modernes et un devis clair avant toute intervention. Contactez-nous pour échanger directement avec l'équipe et voir des exemples de nos réalisations.
+                À Marcory, Zoé Bruno et partout à Abidjan, de nombreux faux techniciens circulent. ETS Kofroid s'engage sur la transparence totale : de vrais techniciens qualifiés, des outils de diagnostic modernes, et pas d'images volées sur Google. Ce que vous voyez est exactement ce que vous obtenez !
               </p>
             </div>
           </div>
