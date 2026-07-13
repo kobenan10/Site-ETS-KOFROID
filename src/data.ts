@@ -1,4 +1,7 @@
 import { Service, ValueProposition, Testimonial } from './types';
+import photoClim from './assets/photos/climatisation-installation-exterieure.jpg';
+import photoElec from './assets/photos/electricite-tableau.jpg';
+import photoPlomb from './assets/photos/plomberie-collecteur-compteurs.jpg';
 
 export const COMPANY_INFO = {
   name: "ETS Kofroid",
@@ -18,8 +21,8 @@ export const SERVICES: Service[] = [
     title: "Froid & Climatisation",
     shortDescription: "Installation, maintenance préventive et dépannage rapide de tous systèmes de climatisation et de réfrigération.",
     fullDescription: "Nous assurons la pose et le dépannage professionnels de climatiseurs de type Split (mural), d'armoires de climatisation verticales de forte capacité, ainsi que les centrales de traitement d'air et chambres froides à Abidjan.",
-    // Beautiful, modern split air conditioner unit mounted on a clean neutral wall
-    image: "https://images.unsplash.com/photo-1585338107529-13afc5f02586?auto=format&fit=crop&w=800&h=600&q=80",
+    // Vraie photo ETS Kofroid : technicien installant une unité extérieure Daikin
+    image: photoClim,
     iconName: "Wind",
     features: [
       "Pose de climatiseurs Split et armoires",
@@ -34,8 +37,8 @@ export const SERVICES: Service[] = [
     title: "Électricité Générale",
     shortDescription: "Installations électriques complètes, mise aux normes de sécurité, courants forts et faibles.",
     fullDescription: "De l'électrification complète d'immeubles résidentiels ou commerciaux au dépannage d'urgence sur tableau électrique basse tension, nos électriciens qualifiés interviennent dans le respect total des normes de sécurité en vigueur.",
-    // Technician working on an electric setup
-    image: "https://images.unsplash.com/photo-1605810230434-7631ac76ec81?auto=format&fit=crop&w=800&h=600&q=80",
+    // Vraie photo ETS Kofroid : tableau électrique Schneider avec régulateur de tension
+    image: photoElec,
     iconName: "Zap",
     features: [
       "Câblage électrique résidentiel, tertiaire et industriel",
@@ -50,8 +53,8 @@ export const SERVICES: Service[] = [
     title: "Plomberie & Sanitaire",
     shortDescription: "Conception de réseaux d'eau, débouchage, réparation de fuites et branchements d'équipements.",
     fullDescription: "Bénéficiez d'une alimentation en eau fluide et d'évacuations d'eau sécurisées. Nous réalisons l'intégralité des raccordements sanitaires, le dépannage urgent de fuites, ainsi que l'installation de ballons d'eau et surpresseurs.",
-    // Professional pipeline or plumbing detail
-    image: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=800&h=600&q=80",
+    // Vraie photo ETS Kofroid : collecteur de compteurs d'eau sur tuyauterie PVC
+    image: photoPlomb,
     iconName: "Droplet",
     features: [
       "Création de réseaux complets en PVC, cuivre et multicouche",
@@ -132,3 +135,4 @@ export const TESTIMONIALS: Testimonial[] = [
     location: "Plateau, Abidjan"
   }
 ];
+
